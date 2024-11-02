@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "run-storybook": "yarn nx storybook frontend-assignment",
+    "run-app": "yarn nx serve frontend-assignment",
     "run-api": "yarn nx serve backend-assignment",
     "test-api": "yarn nx test backend-assignment"
   },

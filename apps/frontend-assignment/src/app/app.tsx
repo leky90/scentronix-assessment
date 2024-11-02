@@ -1,6 +1,7 @@
 import { ActionMenu, ActionMenuItem, FloatActionMenu } from './action-menu';
 import { AddShoppingCartOutlined } from '@mui/icons-material';
 import { Button } from './button';
+import '../tailwind.css';
 
 const ACTION_MENU_ITEMS: ActionMenuItem[] = [
   {
