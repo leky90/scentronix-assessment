@@ -1,0 +1,26 @@
+{
+  "name": "backend-assignment",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend-assignment/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "backend-assignment:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "backend-assignment:build:development"
+        },
+        "production": {
+          "buildTarget": "backend-assignment:build:production"
+        }
+      }
+    }
+  }
+}
